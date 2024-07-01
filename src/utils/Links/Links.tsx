@@ -5,11 +5,10 @@ const Links = {
   donate: "/donate",
   dashboard: "/dashboard",
   socials: {
-    discord: "#",
-    tiktok: "#",
-    instagram: "#",
-    youtube: "#",
-    facebook: "#",
+    discord: "https://discord.gg/PUxkTED68A",
+    tiktok: "https://www.tiktok.com/@darkalleyrp",
+    instagram: "https://www.instagram.com/darkalleyrp",
+    youtube: "https://youtube.com/@DarkAleyRP",
   },
 };
 

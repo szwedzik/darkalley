@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 
 import { useState } from "react";
+import { RulesDisplay } from "@/utils/Rules/Rules";
 
 const Countdown = dynamic(() => import("@/components/Countdown/Coutndown"), {
   ssr: false,
@@ -18,32 +19,40 @@ const Home = () => {
 
   return (
     <main className="bg-zinc-900">
-      <div
-        className="w-full shadow-2xl"
-        style={{
-          backgroundImage: "url('/images/countdown.png')",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-        }}
-      >
-        <div
-          className="w-full py-20"
-          style={{ backdropFilter: "grayscale(.5) blur(5px) brightness(.6)" }}
-        >
-          <div className="w-full flex justify-center p-3">
-            <div className="w-full max-w-screen-xl">
-              <div className="flex flex-col lg:flex-row items-center justify-center">
-                <div className="flex flex-col items-center">
-                  <h1 className="text-2xl font-bold text-center">
+      <div className="relative">
+        <div className="mx-auto max-w-7xl">
+          <div className="relative z-10 pt-14 lg:w-full lg:max-w-2xl">
+            <svg
+              className="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-zinc-900 lg:block"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+            >
+              <polygon points="0,0 90,0 50,100 0,100" />
+            </svg>
+
+            <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
+              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+                <div className="text-center mt-10">
+                  <h1 className="text-2xl font-bold text-center pb-2">
                     Wrota zostaną otwarte za
                   </h1>
+                  <Countdown
+                    date={targetDate}
+                    onFinish={handleCountdownFinish}
+                  />
                 </div>
-              </div>
-              <div className="pt-3">
-                <Countdown date={targetDate} onFinish={handleCountdownFinish} />
               </div>
             </div>
           </div>
+        </div>
+        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <img
+            className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
+            src="/images/countdown.png"
+            alt=""
+            style={{ filter: "grayscale(0.5) brightness(0.6) blur(2px)" }}
+          />
         </div>
       </div>
       <div className="w-full flex justify-center p-3">
@@ -58,9 +67,6 @@ const Home = () => {
                   Dnia 12.07.2024 o godzinie 20:00 odbędzie się start drugiego
                   sezonu!
                 </span>
-                <a target="_blank" href="#">
-                  Podsumowanie Community Meetingu
-                </a>
               </div>
             </div>
           </div>

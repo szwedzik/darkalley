@@ -33,6 +33,7 @@ export default function Rules() {
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             src="/images/rules.png"
             alt=""
+            style={{ filter: "grayscale(0.5) brightness(0.6) blur(2px)" }}
           />
         </div>
       </div>
