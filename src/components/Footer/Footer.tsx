@@ -105,7 +105,12 @@ export default function Footer() {
           Copyright &copy; {new Date().getFullYear()}{" "}
           <a href="https://darkalleyrp.pl">DarkAlleyRP.pl</a> All rights
           reserved. |{" "}
-          <a href="https://pawellukasiewicz.dev">pawellukasiewicz.dev</a>
+          <a
+            className="hover:text-[#fc964b] transition"
+            href="https://pawellukasiewicz.dev"
+          >
+            pawellukasiewicz.dev
+          </a>
         </p>
         <p className="mt-3 text-left text-xs text-gray-500">
           DarkAlleyRP is not affiliated with or authorized by Bohemia

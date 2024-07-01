@@ -1,7 +1,9 @@
 "use client";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Links from "@/utils/Links/Links";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const navigation = [
   { name: "Regulamin", href: Links.rules },
@@ -15,6 +17,13 @@ function classNames(...classes: string[]) {
 }
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const [currentPath, setCurrentPath] = useState("");
+
+  useEffect(() => {
+    setCurrentPath(pathname);
+  }, [pathname]);
+
   return (
     <Disclosure as="nav" className="bg-zinc-950">
       {({ open }) => (
@@ -22,7 +31,7 @@ export default function Navbar() {
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
+                {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -56,9 +65,14 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          "text-gray-300 hover:text-white",
+                          item.href === currentPath
+                            ? "text-white"
+                            : "text-gray-300 hover:text-white",
                           "px-3 py-2 text-sm font-medium",
                         )}
+                        aria-current={
+                          item.href === currentPath ? "page" : undefined
+                        }
                       >
                         {item.name}
                       </a>
@@ -66,16 +80,6 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
-              {/*<div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">*/}
-              {/*  <div className="flex space-x-4">*/}
-              {/*    <a*/}
-              {/*      href="#"*/}
-              {/*      className="text-gray-300 hover:text-grey-700 rounded-md px-3 py-2 text-sm font-medium"*/}
-              {/*    >*/}
-              {/*      Panel użytkownika*/}
-              {/*    </a>*/}
-              {/*  </div>*/}
-              {/*</div>*/}
             </div>
           </div>
 
@@ -87,9 +91,12 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    item.href === currentPath
+                      ? "bg-gray-700 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium",
                   )}
+                  aria-current={item.href === currentPath ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
