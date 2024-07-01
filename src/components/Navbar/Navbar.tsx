@@ -4,10 +4,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Links from "@/utils/Links/Links";
 
 const navigation = [
-  { name: "Regulamin", href: Links.rules},
-  { name: "Lore", href: Links.lore},
-  { name: "FAQ", href: Links.faq},
-  { name: "Wsparcie", href: Links.donate},
+  { name: "Regulamin", href: Links.rules },
+  { name: "Lore", href: Links.lore },
+  { name: "FAQ", href: Links.faq },
+  { name: "Wsparcie", href: Links.donate },
 ];
 
 function classNames(...classes: string[]) {
@@ -36,16 +36,16 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <a href="/">
                     <img
-                        className="block h-8 w-auto lg:hidden"
-                        src="https://cdn.discordapp.com/attachments/1247795330712600576/1257297316394696785/DA.png?ex=6683e4df&is=6682935f&hm=2675f9e659b35facce7bbf1c7a14cb9f83834e3fbcf93d36747550f10c938f77&"
-                        alt="DarkAlley"
+                      className="block h-8 w-auto lg:hidden"
+                      src="https://cdn.discordapp.com/attachments/1247795330712600576/1257297316394696785/DA.png?ex=6683e4df&is=6682935f&hm=2675f9e659b35facce7bbf1c7a14cb9f83834e3fbcf93d36747550f10c938f77&"
+                      alt="DarkAlley"
                     />
                   </a>
                   <a href="/">
                     <img
-                        className="hidden h-8 w-auto lg:block"
-                        src="https://cdn.discordapp.com/attachments/1247795330712600576/1257297316394696785/DA.png?ex=6683e4df&is=6682935f&hm=2675f9e659b35facce7bbf1c7a14cb9f83834e3fbcf93d36747550f10c938f77&"
-                        alt="DarkAlley"
+                      className="hidden h-8 w-auto lg:block"
+                      src="https://cdn.discordapp.com/attachments/1247795330712600576/1257297316394696785/DA.png?ex=6683e4df&is=6682935f&hm=2675f9e659b35facce7bbf1c7a14cb9f83834e3fbcf93d36747550f10c938f77&"
+                      alt="DarkAlley"
                     />
                   </a>
                 </div>
@@ -56,7 +56,7 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                            "text-gray-300 hover:text-white",
+                          "text-gray-300 hover:text-white",
                           "px-3 py-2 text-sm font-medium",
                         )}
                       >
@@ -66,16 +66,16 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <div className="flex space-x-4">
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:text-grey-700 rounded-md px-3 py-2 text-sm font-medium"
-                  >
-                    Panel użytkownika
-                  </a>
-                </div>
-              </div>
+              {/*<div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">*/}
+              {/*  <div className="flex space-x-4">*/}
+              {/*    <a*/}
+              {/*      href="#"*/}
+              {/*      className="text-gray-300 hover:text-grey-700 rounded-md px-3 py-2 text-sm font-medium"*/}
+              {/*    >*/}
+              {/*      Panel użytkownika*/}
+              {/*    </a>*/}
+              {/*  </div>*/}
+              {/*</div>*/}
             </div>
           </div>
 
@@ -87,7 +87,7 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                      "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium",
                   )}
                 >
