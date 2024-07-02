@@ -1,7 +1,7 @@
 "use client";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Links from "@/utils/Links/Links";
+import Links from "@/config/Links/Links";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 

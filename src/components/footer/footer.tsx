@@ -1,5 +1,9 @@
-import FooterSVGProps from "@/utils/Props/FooterProps";
-import Links from "@/utils/Links/Links";
+import Links from "@/config/Links/Links";
+import React from "react";
+
+interface FooterSVGProps extends React.SVGProps<SVGSVGElement> {
+  customProp?: string;
+}
 
 const navigation = {
   main: [

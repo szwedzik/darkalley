@@ -2,7 +2,12 @@
 import React, { useState, useEffect } from "react";
 import "./countdown.css";
 
-import CountdownProps from "@/utils/Props/CountdownProps";
+
+type CountdownProps = {
+  date: Date;
+  onFinish: () => void;
+};
+
 
 type TimeLeft = {
   days: number;
