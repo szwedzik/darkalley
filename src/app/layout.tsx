@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   keywords: "pl",
   authors: [{ name: "Paweł Łukasiewicz", url: "https://pawellukasiewicz.dev" }],
   applicationName: "DarkAlleyRP.pl",
-
 };
 
 export default function RootLayout({
