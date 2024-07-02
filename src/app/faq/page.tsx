@@ -1,3 +1,5 @@
+import type {Metadata} from "next";
+
 const faqs = [
   {
     id: 1,
@@ -6,6 +8,10 @@ const faqs = [
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "DarkAlleyRP.pl - FAQ",
+};
 
 export default function Faq() {
   return (

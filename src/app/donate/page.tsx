@@ -1,4 +1,8 @@
-import { RulesDisplay } from "@/utils/Rules/Rules";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: "DarkAlleyRP.pl - Dotacje",
+};
 
 export default function Donate() {
   return (

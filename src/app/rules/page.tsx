@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
+
 import { RulesDisplay } from "@/utils/Rules/Rules";
+
+export const metadata: Metadata = {
+  title: "DarkAlleyRP.pl - Regulamin",
+};
 
 export default function Rules() {
   return (
