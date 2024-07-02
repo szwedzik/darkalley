@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "DarkAlleyRP.pl - Dotacje",
+  title: "DarkAlley.pl - Dotacje",
 };
 
 export default function Donate() {

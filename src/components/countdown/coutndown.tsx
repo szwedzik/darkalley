@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import "./Countdown.css";
+import "./countdown.css";
 
 import CountdownProps from "@/utils/Props/CountdownProps";
 

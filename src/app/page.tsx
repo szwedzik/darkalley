@@ -1,16 +1,55 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-import { useState } from "react";
+import StatusServer from "@/components/serverStatus/serverStatus";
+import axios from 'axios';
 
-const Countdown = dynamic(() => import("@/components/Countdown/Coutndown"), {
+interface Queue {
+  active: boolean;
+  size: number;
+}
+
+interface Status {
+  players: number;
+  queue: Queue;
+  slots: number;
+}
+
+interface ServerInfo {
+  name: string;
+  online: boolean;
+  offline: boolean;
+  status: Status;
+}
+
+const Countdown = dynamic(() => import("@/components/countdown/coutndown"), {
   ssr: false,
 });
+
+const fetchServerInfo = async (): Promise<ServerInfo> => {
+  const response = await axios.get('http://localhost:3000/api/v1/status');
+  return response.data;
+};
 
 const targetDate = new Date("2024-07-12T20:00:00Z");
 
 const Home = () => {
   const [isCountdownFinished, setIsCountdownFinished] = useState(false);
+  const [serverInfo, setServerInfo] = useState<ServerInfo | null>(null);
+
+  useEffect(() => {
+    const getServerInfo = async () => {
+      try {
+        const data = await fetchServerInfo();
+        setServerInfo(data);
+      } catch (error) {
+        console.error("Error fetching server info:", error);
+      }
+    };
+
+    getServerInfo();
+  }, []);
 
   const handleCountdownFinish = () => {
     setIsCountdownFinished(true);
@@ -30,7 +69,17 @@ const Home = () => {
                 <polygon points="0,0 90,0 50,100 0,100" />
               </svg>
               {isCountdownFinished ? (
-                  <></>
+                  <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
+                    <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+                      <div className="text-center mt-10">
+                        {serverInfo ? (
+                            <StatusServer serverInfo={serverInfo} />
+                        ) : (
+                            <p>Loading server info...</p>
+                        )}
+                      </div>
+                    </div>
+                  </div>
               ) : (
                   <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
@@ -51,7 +100,7 @@ const Home = () => {
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
             <img
                 className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-                src="/images/countdown.png"
+                src={isCountdownFinished ? '/images/home.png' : '/images/countdown.png'}
                 alt="countdown image"
                 style={{ filter: 'grayscale(0.5) brightness(0.6) blur(2px)' }}
             />
@@ -66,13 +115,13 @@ const Home = () => {
                   <div className="flex flex-col w-full rounded-lg p-2">
                     <div className="flex flex-col lg:flex-row backdrop-blur-lg shadow-2xl p-2 mt-2 rounded-lg justify-center">
                       <div className="flex flex-col gap-2 items-center">
-                    <span className="text-2xl max-md:text-1xl font-bold text-center">
-                      DARKALLEY 2.0
-                    </span>
+                        <span className="text-2xl max-md:text-1xl font-bold text-center">
+                          DRUGI SEZON DARKALLEY
+                        </span>
                         <span className="pr-2">
-                      Dnia 12.07.2024 o godzinie 20:00 odbędzie się start
-                      drugiego sezonu!
-                    </span>
+                          Dnia 12.07.2024 o godzinie 20:00 odbędzie się start
+                          drugiego sezonu!
+                        </span>
                       </div>
                     </div>
                   </div>

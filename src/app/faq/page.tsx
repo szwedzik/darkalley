@@ -10,7 +10,7 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "DarkAlleyRP.pl - FAQ",
+  title: "DarkAlley.pl - FAQ",
 };
 
 export default function Faq() {
@@ -31,7 +31,7 @@ export default function Faq() {
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
-                  Najczęściej zadawane pytania
+                  FAQ
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-200">
                   Tutaj znajdziesz odpowiedzi na najczęściej zadawane pytania

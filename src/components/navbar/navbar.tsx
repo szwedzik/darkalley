@@ -46,14 +46,14 @@ export default function Navbar() {
                   <a href="/">
                     <img
                       className="block h-8 w-auto lg:hidden"
-                      src="https://cdn.discordapp.com/attachments/1247795330712600576/1257297316394696785/DA.png?ex=6683e4df&is=6682935f&hm=2675f9e659b35facce7bbf1c7a14cb9f83834e3fbcf93d36747550f10c938f77&"
+                      src="/images/logo.png"
                       alt="DarkAlley"
                     />
                   </a>
                   <a href="/">
                     <img
                       className="hidden h-8 w-auto lg:block"
-                      src="https://cdn.discordapp.com/attachments/1247795330712600576/1257297316394696785/DA.png?ex=6683e4df&is=6682935f&hm=2675f9e659b35facce7bbf1c7a14cb9f83834e3fbcf93d36747550f10c938f77&"
+                      src="/images/logo.png"
                       alt="DarkAlley"
                     />
                   </a>

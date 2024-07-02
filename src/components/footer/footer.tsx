@@ -3,7 +3,7 @@ import Links from "@/utils/Links/Links";
 
 const navigation = {
   main: [
-    // { name: "Panel użytkownika", href: Links.dashboard },
+    { name: "Panel użytkownika", href: Links.dashboard },
     { name: "Regulamin", href: Links.rules },
     { name: "Lore", href: Links.lore },
     { name: "FAQ", href: Links.faq },
