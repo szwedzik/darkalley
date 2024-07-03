@@ -29,7 +29,7 @@ const Countdown = dynamic(() => import("@/components/countdown/coutndown"), {
 });
 
 const fetchServerInfo = async (): Promise<ServerInfo> => {
-  const response = await axios.get("http://localhost:3000/api/v1/status");
+  const response = await axios.get("/api/v1/status");
   return response.data;
 };
 
@@ -100,13 +100,11 @@ const Home = () => {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <Image
+          <img
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             src={
               isCountdownFinished ? "/images/home.png" : "/images/countdown.png"
             }
-            width={500}
-            height={500}
             alt="countdown image"
             style={{ filter: "grayscale(0.5) brightness(0.6) blur(2px)" }}
           />

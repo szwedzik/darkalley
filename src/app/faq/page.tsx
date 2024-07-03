@@ -97,12 +97,10 @@ export default function Faq() {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <Image
+          <img
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             src="/images/faq.png"
             alt="faq"
-            width={500}
-            height={500}
             style={{ filter: "grayscale(0.5) brightness(0.6) blur(2px)" }}
           />
         </div>

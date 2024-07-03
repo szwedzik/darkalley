@@ -10,10 +10,10 @@ const Custom404: React.FC = () => {
           <div className="bg-purple">
             <div className="starts">
               <div className="central-body">
-                <Image
+                <img
                   className="image-404"
                   src="/images/404.svg"
-                  width={300}
+                  width="300px"
                   alt="404"
                 />
                 <a href="/" className="btn-go-home" target="_blank">
@@ -21,31 +21,31 @@ const Custom404: React.FC = () => {
                 </a>
               </div>
               <div className="objects">
-                <Image
+                <img
                   className="object_rocket"
                   src="/images/rocket.svg"
-                  width={40}
+                  width="40px"
                   alt="rocket"
                 />
                 <div className="earth-moon">
-                  <Image
+                  <img
                     className="object_earth"
                     src="/images/earth.svg"
-                    width={100}
+                    width="100px"
                     alt="earth"
                   />
-                  <Image
+                  <img
                     className="object_moon"
                     src="/images/moon.svg"
-                    width={80}
+                    width="80px"
                     alt="moon"
                   />
                 </div>
                 <div className="box_astronaut">
-                  <Image
+                  <img
                     className="object_astronaut"
                     src="/images/astronaut.svg"
-                    width={140}
+                    width="140px"
                     alt="astronaut"
                   />
                 </div>

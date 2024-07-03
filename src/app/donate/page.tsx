@@ -33,11 +33,9 @@ export default function Donate() {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <Image
+          <img
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             src="/images/donate.png"
-            width={500}
-            height={500}
             alt="Wsparcie"
             style={{ filter: "grayscale(0.5) brightness(0.6) blur(2px)" }}
           />
