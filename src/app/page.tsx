@@ -33,8 +33,8 @@ const fetchServerInfo = async (): Promise<ServerInfo> => {
   return response.data;
 };
 
-//const targetDate = new Date("2024-07-12T18:00:00Z");
-const targetDate = new Date("2024-07-02T20:05:00Z");
+const targetDate = new Date("2024-07-12T18:00:00Z");
+//const targetDate = new Date("2024-07-02T20:05:00Z");
 
 const Home = () => {
   const [isCountdownFinished, setIsCountdownFinished] = useState(false);
