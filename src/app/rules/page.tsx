@@ -249,11 +249,11 @@ const RulesDisplay = () => {
           <div key={index} className="flex flex-col w-full rounded-lg p-2">
             <div className="flex flex-col lg:flex-row backdrop:blur-lg shadow-2xl p-2 mt-2 rounded-lg">
               <div className="flex flex-col gap-2">
-                <span className="text-2xl max-md:text-1xl font-bold">
+                <span className="text-2xl max-md:text-1xl font-bold text-gray-100">
                   {rule.title}
                 </span>
                 {rule.content.map((item, idx) => (
-                  <span key={idx} className="text-sm max-md:text-xs">
+                  <span key={idx} className="text-sm max-md:text-xs text-gray-300">
                     {item}
                   </span>
                 ))}

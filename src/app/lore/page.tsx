@@ -81,22 +81,22 @@ const LoreDisplay = () => {
             <div className="flex flex-col lg:flex-row backdrop:blur-lg shadow-2xl p-2 mt-2 rounded-lg">
               <div className="flex flex-col gap-2 pt-2 pb-2">
                 {entry.intro && (
-                  <span className="text-1xl max-md:text-1xl font-bold">
+                  <span className="text-1xl max-md:text-1xl font-bold text-gray-100">
                     {entry.intro.trim()}
                   </span>
                 )}
                 {entry.date && (
-                  <span className="text-2xl max-md:text-1xl font-bold">
+                  <span className="text-2xl max-md:text-1xl font-bold text-gray-300">
                     {entry.date}
                   </span>
                 )}
                 {entry.title && (
-                  <span className="text-2xl max-md:text-1xl font-bold">
+                  <span className="text-2xl max-md:text-1xl font-bold text-gray-300">
                     {entry.title}
                   </span>
                 )}
                 {entry.content && (
-                  <span className="text-sm max-md:text-xs whitespace-pre-line">
+                  <span className="text-sm max-md:text-xs whitespace-pre-line text-gray-300">
                     {entry.content.trim()}
                   </span>
                 )}

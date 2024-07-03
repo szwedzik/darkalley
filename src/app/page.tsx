@@ -33,8 +33,8 @@ const fetchServerInfo = async (): Promise<ServerInfo> => {
   return response.data;
 };
 
-const targetDate = new Date("2024-07-12T18:00:00Z");
-//const targetDate = new Date("2024-07-02T20:05:00Z");
+//const targetDate = new Date("2024-07-12T18:00:00Z");
+const targetDate = new Date("2024-07-02T20:05:00Z");
 
 const Home = () => {
   const [isCountdownFinished, setIsCountdownFinished] = useState(false);
@@ -119,10 +119,10 @@ const Home = () => {
               <div className="flex flex-col w-full rounded-lg p-2">
                 <div className="flex flex-col lg:flex-row backdrop-blur-lg shadow-2xl p-2 mt-2 rounded-lg justify-center">
                   <div className="flex flex-col gap-2 items-center">
-                    <span className="text-2xl max-md:text-1xl font-bold text-center">
+                    <span className="text-2xl max-md:text-1xl font-bold text-center text-gray-100">
                       DRUGI SEZON DARKALLEY
                     </span>
-                    <span className="pr-2">
+                    <span className="pr-2 text-gray-300">
                       Lloyd Holloway, pochodzący z Cassandry miasta na północy
                       jednej z wysp Oceanu Północnego - Alterii, przekazuje
                       swoją historię dla młodych ludzi, którzy nie rozumieją,

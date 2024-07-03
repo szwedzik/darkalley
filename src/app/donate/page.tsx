@@ -45,7 +45,7 @@ export default function Donate() {
         <div className="w-full max-w-screen-xl">
           <div className="flex flex-col w-full rounded-lg p-2">
             <div className="flex flex-col lg:flex-row backdrop:blur-lg shadow-2xl p-2 mt-2 rounded-lgr">
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 text-gray-100">
                 <span className="pr-2 text-sm">
                   Wspieranie naszego projektu jest całkowicie dobrowolne.
                   Wszelkie darowizny są wykorzystywane wyłącznie na opłacenie
