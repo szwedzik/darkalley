@@ -1,7 +1,15 @@
 "use client";
-import { Disclosure } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Links from "@/config/Links/Links";
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+} from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import Links from "@/config/links/links";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -80,6 +88,14 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
+              {/*<div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">*/}
+              {/*  <a*/}
+              {/*    href="/dashboard"*/}
+              {/*    className="ml-3 text-gray-400 hover:text-white px-3 py-2 text-sm font-medium"*/}
+              {/*  >*/}
+              {/*    Panel użytkownika*/}
+              {/*  </a>*/}
+              {/*</div>*/}
             </div>
           </div>
 
@@ -101,6 +117,18 @@ export default function Navbar() {
                   {item.name}
                 </Disclosure.Button>
               ))}
+              <Disclosure.Button
+                as="a"
+                href="/user-panel"
+                className={classNames(
+                  "/user-panel" === currentPath
+                    ? "bg-gray-700 text-white"
+                    : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                  "block rounded-md px-3 py-2 text-base font-medium",
+                )}
+              >
+                Panel użytkownika
+              </Disclosure.Button>
             </div>
           </Disclosure.Panel>
         </>

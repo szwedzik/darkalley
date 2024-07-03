@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 
-
 export const metadata: Metadata = {
   title: "DarkAlley.pl - Regulamin",
 };
@@ -243,26 +242,26 @@ const rules = [
 
 const RulesDisplay = () => {
   return (
-      <div className="w-full flex justify-center p-3">
-        <div className="w-full max-w-screen-xl">
-          {rules.map((rule, index) => (
-              <div key={index} className="flex flex-col w-full rounded-lg p-2">
-                <div className="flex flex-col lg:flex-row backdrop:blur-lg shadow-2xl p-2 mt-2 rounded-lg">
-                  <div className="flex flex-col gap-2">
+    <div className="w-full flex justify-center p-3">
+      <div className="w-full max-w-screen-xl">
+        {rules.map((rule, index) => (
+          <div key={index} className="flex flex-col w-full rounded-lg p-2">
+            <div className="flex flex-col lg:flex-row backdrop:blur-lg shadow-2xl p-2 mt-2 rounded-lg">
+              <div className="flex flex-col gap-2">
                 <span className="text-2xl max-md:text-1xl font-bold">
                   {rule.title}
                 </span>
-                    {rule.content.map((item, idx) => (
-                        <span key={idx} className="text-sm max-md:text-xs">
+                {rule.content.map((item, idx) => (
+                  <span key={idx} className="text-sm max-md:text-xs">
                     {item}
                   </span>
-                    ))}
-                  </div>
-                </div>
+                ))}
               </div>
-          ))}
-        </div>
+            </div>
+          </div>
+        ))}
       </div>
+    </div>
   );
 };
 

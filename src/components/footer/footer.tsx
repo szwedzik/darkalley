@@ -1,4 +1,4 @@
-import Links from "@/config/Links/Links";
+import Links from "@/config/links/links";
 import React from "react";
 
 interface FooterSVGProps extends React.SVGProps<SVGSVGElement> {
@@ -7,11 +7,11 @@ interface FooterSVGProps extends React.SVGProps<SVGSVGElement> {
 
 const navigation = {
   main: [
-    { name: "Panel użytkownika", href: Links.dashboard },
     { name: "Regulamin", href: Links.rules },
     { name: "Lore", href: Links.lore },
     { name: "FAQ", href: Links.faq },
     { name: "Wsparcie", href: Links.donate },
+    // { name: "Panel użytkownika", href: Links.dashboard },
   ],
   social: [
     {

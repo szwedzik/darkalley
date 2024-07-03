@@ -3,10 +3,64 @@ import type { Metadata } from "next";
 const faqs = [
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "Jak wejść na serwer?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "Wystarczy że wyszukasz nasz serwer w launcherze DayZ po danych: DarkAlley [RP][PL] IP: 45.145.40.36:2302"
   },
+  {
+    id: 2,
+    question: "Czy potrzebuję zdać WL?",
+    answer:
+        "Aktualnie nie jest u nas aktywna WL, każdy może wejść po wcześniejszym zapoznaniu się z lore oraz regulaminem",
+  },
+  {
+    id: 3,
+    question: "Gdzie znajdę lore?",
+    answer:
+        "Lore znajdziesz tutaj: https://darkalley.pl/lore",
+  },
+  {
+    id: 4,
+    question: "Gdzie znajdę regulamin serwera?",
+    answer:
+        "Regulamin znajdziesz tutaj: https://darkalley.pl/rules",
+  },
+  {
+    id: 5,
+    question: "Kiedy występują restarty serwera?",
+    answer:
+        "Restarty serwera odbywają się co 4 godziny: 00:00, 04:00, 08:00, 12:00, 16:00, 20:00.",
+  },
+  {
+    id: 6,
+    question: "Jak użyć komend narracyjnych?",
+    answer:
+        "Naciśnij klawisz ENTER i wpisz !me {czynność} lub !do {opis}"
+  },
+  {
+    id: 7,
+    question: "Co w przypadku znalezienia błędu, buga?",
+    answer:
+        "Możesz skontaktować się z nami wysyłając ticket z nagraniem lub screenem na naszym discordzie - Dark Alley RP🎟『stwórz-ticket』",
+  },
+  {
+    id: 8,
+    question: "Nie mogę wejść na serwer, wyskakuje błędny nick",
+    answer:
+        "W ustawieniach launchera musisz wpisać Imię i Nazwisko postaci, nie może być nick Survivor W przypadku problemów skontaktuj się z nami."
+  },
+  {
+    id: 9,
+    question: "Jakie przywileje daje wsparcie serwera?",
+    answer:
+        "Zyskujesz dostęp do grup VIPowskich na discordzie, możesz brać czynny udział w ważnych decyzjach podejmowanych na serwerze.",
+  },
+  {
+    id: 10,
+    question: "Nie mogę wyszukać serwera na liście",
+    answer:
+        "Spróbuj skorzystać z zewnętrznego launchera DZSA launcher i wtedy wyszukać nasz serwer.",
+  }
 ];
 
 export const metadata: Metadata = {

@@ -15,7 +15,7 @@ const Custom404: React.FC = () => {
                   width="300px"
                 />
                 <a href="/" className="btn-go-home" target="_blank">
-                  WRÓĆ DO STRONY GŁÓWNEJ :)
+                  WRÓĆ DO STRONY GŁÓWNEJ
                 </a>
               </div>
               <div className="objects">
