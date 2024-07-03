@@ -100,12 +100,16 @@ const Home = () => {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
+          <Image
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             src={
-              isCountdownFinished ? "/images/home.png" : "/images/countdown.png"
+              isCountdownFinished ? "/images/home.webp" : "/images/countdown.webp"
             }
             alt="countdown image"
+            width={500}
+            height={500}
+            quality={75}
+            loading="eager"
             style={{ filter: "grayscale(0.5) brightness(0.6) blur(2px)" }}
           />
         </div>

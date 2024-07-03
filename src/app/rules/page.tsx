@@ -295,10 +295,14 @@ export default function Rules() {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
+          <Image
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-            src="/images/rules.png"
+            src="/images/rules.webp"
             alt="regulamin"
+            width={500}
+            height={500}
+            quality={75}
+            loading="eager"
             style={{ filter: "grayscale(0.5) brightness(0.6) blur(2px)" }}
           />
         </div>
