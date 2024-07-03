@@ -105,6 +105,8 @@ const Home = () => {
             src={
               isCountdownFinished ? "/images/home.png" : "/images/countdown.png"
             }
+            width={500}
+            height={500}
             alt="countdown image"
             style={{ filter: "grayscale(0.5) brightness(0.6) blur(2px)" }}
           />

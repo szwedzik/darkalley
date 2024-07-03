@@ -298,7 +298,9 @@ export default function Rules() {
           <Image
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             src="/images/rules.png"
-            alt=""
+            alt="regulamin"
+            width={500}
+            height={500}
             style={{ filter: "grayscale(0.5) brightness(0.6) blur(2px)" }}
           />
         </div>
