@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import StatusServer from "@/components/serverStatus/serverStatus";
 import axios from "axios";
+import Image from "next/image";
 
 interface Queue {
   active: boolean;
@@ -99,7 +100,7 @@ const Home = () => {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
+          <Image
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             src={
               isCountdownFinished ? "/images/home.png" : "/images/countdown.png"
