@@ -1,5 +1,6 @@
 import React from "react";
 import "./custom404.css";
+import Image from "next/image";
 
 const Custom404: React.FC = () => {
   return (
@@ -9,38 +10,43 @@ const Custom404: React.FC = () => {
           <div className="bg-purple">
             <div className="starts">
               <div className="central-body">
-                <img
+                <Image
                   className="image-404"
                   src="/images/404.svg"
-                  width="300px"
+                  width={300}
+                  alt="404"
                 />
                 <a href="/" className="btn-go-home" target="_blank">
                   WRÓĆ DO STRONY GŁÓWNEJ
                 </a>
               </div>
               <div className="objects">
-                <img
+                <Image
                   className="object_rocket"
                   src="/images/rocket.svg"
-                  width="40px"
+                  width={40}
+                  alt="rocket"
                 />
                 <div className="earth-moon">
-                  <img
+                  <Image
                     className="object_earth"
                     src="/images/earth.svg"
-                    width="100px"
+                    width={100}
+                    alt="earth"
                   />
-                  <img
+                  <Image
                     className="object_moon"
                     src="/images/moon.svg"
-                    width="80px"
+                    width={80}
+                    alt="moon"
                   />
                 </div>
                 <div className="box_astronaut">
-                  <img
+                  <Image
                     className="object_astronaut"
                     src="/images/astronaut.svg"
-                    width="140px"
+                    width={140}
+                    alt="astronaut"
                   />
                 </div>
               </div>
