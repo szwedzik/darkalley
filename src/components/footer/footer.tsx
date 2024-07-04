@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
           Copyright &copy; {new Date().getFullYear()}{" "}
-          <a href="https://darkalleyrp.pl">DarkAlleyRP.pl</a> All rights
+          <a href="https://darkalley.pl">DarkAlley.pl</a> All rights
           reserved. |{" "}
           <a
             className="hover:text-[#fc964b] transition"
@@ -104,7 +104,7 @@ export default function Footer() {
           </a>
         </p>
         <p className="mt-3 text-left text-xs text-gray-500">
-          DarkAlleyRP is not affiliated with or authorized by Bohemia
+          DarkAlley is not affiliated with or authorized by Bohemia
           Interactive a.s. Bohemia Interactive, ARMA®, DayZ® all associated
           logos and designs are trademarks or registered trademarks of Bohemia
           Interactive a.s.
