@@ -35,7 +35,7 @@ const lore = [
     `,
   },
   {
-    date: "21 śierpnia 2058 roku",
+    date: "21 sierpnia 2058 roku",
     content: `
       Nie wiem, ile przeżyje… nasza piękna lekarka wykryła u mnie coś dziwnego, coś niespotykanego, co nigdy nie powinno wystąpić u zwykłego starca od kilku miesięcy krążą plotki, że powstało coś na wzór osady? Nazywali to Edenem podobno bezpiecznym miejscem… dawno tego słowa nie słyszałem. Coraz więcej śmiałków zaczęło wychodzić z bunkra… żaden z nich nie wrócił, mieliśmy nadzieje, że to właśnie ta Osada zatrzymała ich na dłużej.
     `,
