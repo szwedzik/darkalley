@@ -1,14 +1,8 @@
 "use client";
 import {
   Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
 } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Links from "@/config/links/links";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -18,6 +12,7 @@ const navigation = [
   { name: "Lore", href: Links.lore },
   { name: "FAQ", href: Links.faq },
   { name: "Wsparcie", href: Links.donate },
+  { name: "Discord", href: Links.socials.discord },
 ];
 
 function classNames(...classes: string[]) {
@@ -117,18 +112,18 @@ export default function Navbar() {
                   {item.name}
                 </Disclosure.Button>
               ))}
-              <Disclosure.Button
-                as="a"
-                href="/user-panel"
-                className={classNames(
-                  "/user-panel" === currentPath
-                    ? "bg-gray-700 text-white"
-                    : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                  "block rounded-md px-3 py-2 text-base font-medium",
-                )}
-              >
-                Panel użytkownika
-              </Disclosure.Button>
+              {/*<Disclosure.Button*/}
+              {/*  as="a"*/}
+              {/*  href="/dashboard"*/}
+              {/*  className={classNames(*/}
+              {/*    "/user-panel" === currentPath*/}
+              {/*      ? "bg-gray-700 text-white"*/}
+              {/*      : "text-gray-300 hover:bg-gray-700 hover:text-white",*/}
+              {/*    "block rounded-md px-3 py-2 text-base font-medium",*/}
+              {/*  )}*/}
+              {/*>*/}
+              {/*  Panel użytkownika*/}
+              {/*</Disclosure.Button>*/}
             </div>
           </Disclosure.Panel>
         </>
