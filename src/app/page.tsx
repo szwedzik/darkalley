@@ -34,7 +34,6 @@ const fetchServerInfo = async (): Promise<ServerInfo> => {
 };
 
 const targetDate = new Date("2024-07-12T18:00:00Z");
-//const targetDate = new Date("2024-07-05T01:04:50Z");
 
 const checkIfCountdownFinished = (targetDate: Date): boolean => {
     const currentDate = new Date();
