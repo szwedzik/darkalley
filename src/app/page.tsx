@@ -34,7 +34,13 @@ const fetchServerInfo = async (): Promise<ServerInfo> => {
 };
 
 const targetDate = new Date("2024-07-12T18:00:00Z");
-//const targetDate = new Date("2024-07-02T20:05:00Z");
+//const targetDate = new Date("2024-07-05T01:04:50Z");
+
+const checkIfCountdownFinished = (targetDate: Date): boolean => {
+    const currentDate = new Date();
+    return currentDate >= targetDate;
+
+}
 
 const Home = () => {
   const [isCountdownFinished, setIsCountdownFinished] = useState(false);
@@ -70,15 +76,11 @@ const Home = () => {
             >
               <polygon points="0,0 90,0 50,100 0,100" />
             </svg>
-            {isCountdownFinished ? (
+            {checkIfCountdownFinished(targetDate) ? (
               <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                   <div className="text-center mt-10">
-                    {serverInfo ? (
-                      <StatusServer serverInfo={serverInfo} />
-                    ) : (
-                      <p>Loading server info...</p>
-                    )}
+                    <StatusServer serverInfo={serverInfo} />
                   </div>
                 </div>
               </div>
@@ -103,7 +105,7 @@ const Home = () => {
           <Image
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             src={
-              isCountdownFinished ? "/images/home.webp" : "/images/countdown.webp"
+              checkIfCountdownFinished(targetDate) ? "/images/home.webp" : "/images/countdown.webp"
             }
             alt="countdown image"
             width={500}
@@ -114,7 +116,7 @@ const Home = () => {
           />
         </div>
       </div>
-      {isCountdownFinished ? (
+      {checkIfCountdownFinished(targetDate) ? (
         <></>
       ) : (
         <>

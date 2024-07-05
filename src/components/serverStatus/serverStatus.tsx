@@ -26,7 +26,7 @@ const StatusServer: React.FC<Props> = ({ serverInfo }) => {
   if (!serverInfo || !serverInfo.status) {
     return (
       <div className="bg-zinc-900 text-white p-6 rounded-lg shadow-md animate-pulse">
-        Loading...
+        Pobieranie danych...
       </div>
     );
   }

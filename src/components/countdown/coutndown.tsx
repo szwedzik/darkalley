@@ -34,6 +34,10 @@ const formatLabel = (
   if (value >= 2 && value <= 4) return labels[1];
   return labels[2];
 };
+const checkIfCountdownFinished = (targetDate: Date): boolean => {
+  const currentDate = new Date();
+  return currentDate >= targetDate;
+}
 
 const Countdown: React.FC<CountdownProps> = ({ date, onFinish }) => {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft(date));
@@ -44,15 +48,10 @@ const Countdown: React.FC<CountdownProps> = ({ date, onFinish }) => {
       const newTimeLeft = calculateTimeLeft(date);
       setTimeLeft(newTimeLeft);
 
-      if (
-        newTimeLeft.days <= 0 &&
-        newTimeLeft.hours <= 0 &&
-        newTimeLeft.minutes <= 0 &&
-        newTimeLeft.seconds <= 0
-      ) {
-        setIsFinished(true);
-        onFinish();
-        clearInterval(intervalId);
+      if (checkIfCountdownFinished(date)) {
+          setIsFinished(true);
+          onFinish();
+          clearInterval(intervalId);
       }
     }, 1000);
     return () => clearInterval(intervalId);
