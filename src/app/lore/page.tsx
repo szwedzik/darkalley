@@ -58,16 +58,17 @@ const lore = [
     title: "FRAKCJA HOPE",
     content: `
       Frakcja Hope to elitarna organizacja technologiczna, zrzeszająca najbłyskotliwsze umysły z całego świata. Działa jako oaza innowacji, w której najzdolniejsi naukowcy, inżynierowie i wizjonerzy mają możliwość rozwijania przełomowych technologii, które mogą zrewolucjonizować przyszłość ludzkości. Finansowanie dla Frakcji Hope pochodzi od najbogatszych miliarderów oraz wpływowych polityków, którzy dostrzegają potencjał w inwestowaniu w przyszłość opartą na zaawansowanej technologii.
-
+      
       W 2022 roku wybuchł globalny konflikt zbrojny, który zagroził przetrwaniu cywilizacji. W odpowiedzi na to, członkowie Frakcji Hope schronili się w swoim dobrze ukrytym bunkrze, przeznaczonym dla najważniejszych członków organizacji oraz elity finansującej jej działalność. Ten zaawansowany technologicznie schron, wyposażony we wszelkie niezbędne zasoby, zapewnił przetrwanie i komfort w najtrudniejszych warunkach. W bunkrze znajdowały się najnowocześniejsze laboratoria, centra badawcze oraz zapasy żywności i wody, które mogły zapewnić długoterminowe przetrwanie.
+      
+      Po 40 latach izolacji, w 2058 roku, członkowie Frakcji Hope w końcu opuścili bunkier. Świat, który zastali na powierzchni, był zupełnie inny niż ten, który pamiętali. Teraz  wymagał od nich nie tylko technologicznych innowacji, ale również odbudowy ....
 
-      Po 40 latach izolacji, w 2062 roku, członkowie Frakcji Hope w końcu opuścili bunkier. Świat, który zastali na powierzchni, był zupełnie inny niż ten, który pamiętali. Teraz  wymagał od nich nie tylko technologicznych innowacji, ale również odbudowy ....
     `,
   },
   {
     title: "EDEN",
     content: `
-      W roku 2022, świat, który kiedyś znaliśmy, legł w gruzach po serii katastrof, które zdewastowały powierzchnię planety. W samym sercu tego postapokaliptycznego krajobrazu, troje odważnych ludzi opuściło bezpieczny schronienie bunkra, aby stworzyć nową nadzieję dla ludzkości. Ci trzej pionierzy pochodzili z trzech kluczowych Bunkrów : Siły, Mediacji i Badań. Ich wspólnym celem było stworzenie osady, która mogłaby służyć jako azyl dla innych ocalałych - miejsce, gdzie mogli by zacząć od nowa, tak jak oni kilka lat wcześniej. Tak powstała osada "Eden".
+     W roku 2022, świat, który kiedyś znaliśmy, legł w gruzach po serii katastrof, które zdewastowały powierzchnię planety. W samym sercu tego postapokaliptycznego krajobrazu, troje odważnych ludzi opuściło bezpieczny schronienie bunkra, aby stworzyć nową nadzieję dla ludzkości. Ci trzej pionierzy pochodzili z trzech kluczowych Bunkrów : Siły, Mediacji i Badań. Ich wspólnym celem było stworzenie osady, która mogłaby służyć jako azyl dla innych ocalałych - miejsce, gdzie mogli by zacząć od nowa, tak jak oni kilka lat wcześniej. Tak w roku 2058 powstała osada "Eden".
     `,
   },
 ];

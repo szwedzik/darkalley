@@ -29,17 +29,17 @@ const Countdown = dynamic(() => import("@/components/countdown/coutndown"), {
 });
 
 const fetchServerInfo = async (): Promise<ServerInfo> => {
-  const response = await axios.get("/api/v1/status");
+  const response = await axios.get("/api/status");
   return response.data;
 };
 
 const targetDate = new Date("2024-07-12T18:00:00Z");
+//const targetDate = new Date("2024-07-05T01:14:00Z");
 
 const checkIfCountdownFinished = (targetDate: Date): boolean => {
-    const currentDate = new Date();
-    return currentDate >= targetDate;
-
-}
+  const currentDate = new Date();
+  return currentDate >= targetDate;
+};
 
 const Home = () => {
   const [isCountdownFinished, setIsCountdownFinished] = useState(false);
@@ -104,7 +104,9 @@ const Home = () => {
           <Image
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             src={
-              checkIfCountdownFinished(targetDate) ? "/images/home.webp" : "/images/countdown.webp"
+              checkIfCountdownFinished(targetDate)
+                ? "/images/home.webp"
+                : "/images/countdown.webp"
             }
             alt="countdown image"
             width={500}
