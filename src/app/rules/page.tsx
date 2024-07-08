@@ -253,7 +253,10 @@ const RulesDisplay = () => {
                   {rule.title}
                 </span>
                 {rule.content.map((item, idx) => (
-                  <span key={idx} className="text-sm max-md:text-xs text-gray-300">
+                  <span
+                    key={idx}
+                    className="text-sm max-md:text-xs text-gray-300"
+                  >
                     {item}
                   </span>
                 ))}

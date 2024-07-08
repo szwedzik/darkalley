@@ -62,10 +62,10 @@ export default function Donate() {
                   Wszyscy gracze są traktowani w ten sam sposób
                 </span>
                 <span className="pr-2 text-sm">
-                  Każda osoba, która przekaże darowniznę, otrzyma rangę &quot;VIP&quot; na
-                  serwerze Discord na okres 2-miesięcy, dostęp do specjalnej
-                  grupy, oraz ma czynny wpływ na rozwiązania wprowadzane na
-                  serwerze.
+                  Każda osoba, która przekaże darowniznę, otrzyma rangę
+                  &quot;VIP&quot; na serwerze Discord na okres 2-miesięcy,
+                  dostęp do specjalnej grupy, oraz ma czynny wpływ na
+                  rozwiązania wprowadzane na serwerze.
                 </span>
 
                 <p className="text-sm mb-4">

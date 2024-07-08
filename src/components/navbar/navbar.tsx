@@ -1,7 +1,5 @@
 "use client";
-import {
-  Disclosure,
-} from "@headlessui/react";
+import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Links from "@/config/links/links";
 import { usePathname } from "next/navigation";
@@ -83,14 +81,14 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
-              {/*<div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">*/}
-              {/*  <a*/}
-              {/*    href="/dashboard"*/}
-              {/*    className="ml-3 text-gray-400 hover:text-white px-3 py-2 text-sm font-medium"*/}
-              {/*  >*/}
-              {/*    Panel użytkownika*/}
-              {/*  </a>*/}
-              {/*</div>*/}
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <a
+                  href="/dashboard"
+                  className="ml-3 text-gray-400 hover:text-white px-3 py-2 text-sm font-medium"
+                >
+                  Panel użytkownika
+                </a>
+              </div>
             </div>
           </div>
 

@@ -37,7 +37,7 @@ const formatLabel = (
 const checkIfCountdownFinished = (targetDate: Date): boolean => {
   const currentDate = new Date();
   return currentDate >= targetDate;
-}
+};
 
 const Countdown: React.FC<CountdownProps> = ({ date, onFinish }) => {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft(date));
@@ -49,9 +49,9 @@ const Countdown: React.FC<CountdownProps> = ({ date, onFinish }) => {
       setTimeLeft(newTimeLeft);
 
       if (checkIfCountdownFinished(date)) {
-          setIsFinished(true);
-          onFinish();
-          clearInterval(intervalId);
+        setIsFinished(true);
+        onFinish();
+        clearInterval(intervalId);
       }
     }, 1000);
     return () => clearInterval(intervalId);
