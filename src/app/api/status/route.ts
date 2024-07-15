@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import apiService from "@/lib/cfTools/apiServices";
 
+export const fetchCache = 'force-no-store';
+
 export async function GET(request: NextRequest) {
   const serverId = "9932ff9a812ed8d0faa5cf25a019ed264590bb33";
 
