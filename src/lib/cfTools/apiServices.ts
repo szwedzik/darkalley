@@ -14,10 +14,10 @@ interface ServerStatus {
   slots: number;
 }
 
+
 interface ServerInfo {
   name: string;
-  online: number;
-  offline: number;
+  online: boolean;
   time: string;
   status: ServerStatus;
 }
@@ -120,7 +120,6 @@ class API {
     return {
       name: data.name,
       online: data.online,
-      offline: data.offline,
       time: data.time,
       status: {
         players: data.status.players,
