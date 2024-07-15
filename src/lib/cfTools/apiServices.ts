@@ -120,7 +120,7 @@ class API {
     return {
       name: data.name,
       online: data.online,
-      time: data.time,
+      time: new Date().toISOString(),
       status: {
         players: data.status.players,
         queue: {

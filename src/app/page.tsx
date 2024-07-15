@@ -29,7 +29,16 @@ const Countdown = dynamic(() => import("@/components/countdown/coutndown"), {
 });
 
 const fetchServerInfo = async (): Promise<ServerInfo> => {
-  const response = await axios.get("/api/status");
+  const response = await axios.get(
+      '/api/status',
+      {
+        headers: {
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache',
+          'Expires': '0',
+        },
+      }
+  )
   return response.data;
 };
 
