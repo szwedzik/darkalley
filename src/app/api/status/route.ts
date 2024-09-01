@@ -8,6 +8,7 @@ export async function GET(request: NextRequest) {
 
   try {
     const serverInfo = await apiService.getServerInfo(serverId);
+    console.log("fetching server info")
     if (!serverInfo) {
       return NextResponse.json(
         { error: "Failed to fetch server info" },
@@ -16,7 +17,6 @@ export async function GET(request: NextRequest) {
     }
     return NextResponse.json(serverInfo);
   } catch (error: any) {
-    console.error("Error fetching server info:", error);
     return NextResponse.json(
       { error: "Failed to fetch server info" },
       { status: 500 },

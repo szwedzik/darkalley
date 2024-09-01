@@ -1,5 +1,6 @@
 const Links = {
-  rules: "/rules",
+  //rules: "/rules",
+  rules: "https://docs.google.com/document/d/1k877UtXaE0tRQKLu0ZRSN5S6zJ2wQVi_dPaSiRWW2ZM",
   lore: "/lore",
   faq: "/faq",
   donate: "/donate",

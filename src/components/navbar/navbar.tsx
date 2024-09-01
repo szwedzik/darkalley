@@ -65,6 +65,7 @@ export default function Navbar() {
                       <a
                         key={item.name}
                         href={item.href}
+                        target={item.href.startsWith("http") ? "_blank" : "_self"}
                         className={classNames(
                           item.href === currentPath
                             ? "text-white"

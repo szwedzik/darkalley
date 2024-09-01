@@ -89,7 +89,7 @@ class API {
     try {
       const token = await this.auth();
       if (!token) {
-        throw new Error("Unable to authenticate");
+         new Error("Unable to authenticate");
       }
 
       const response: AxiosResponse<{ [key: string]: ServerInfo }> =
@@ -123,11 +123,11 @@ class API {
       time: new Date().toISOString(),
       status: {
         players: data.status.players,
+        slots: data.status.slots,
         queue: {
           active: data.status.queue.active,
           size: data.status.queue.size,
         },
-        slots: data.status.slots,
       },
     };
   }
