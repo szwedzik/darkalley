@@ -42,7 +42,7 @@ const fetchServerInfo = async (): Promise<ServerInfo> => {
   return response.data;
 };
 
-const targetDate = new Date("2024-07-12T18:00:00Z");
+const targetDate = new Date("2024-10-04T18:00:00Z");
 //const targetDate = new Date("2024-07-05T01:14:00Z");
 
 const checkIfCountdownFinished = (targetDate: Date): boolean => {
@@ -97,7 +97,7 @@ const Home = () => {
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                   <div className="text-center mt-10">
                     <h1 className="text-2xl font-bold text-center pb-2">
-                      Wrota zostaną otwarte za
+                      Start edycji za:
                     </h1>
                     <Countdown
                       date={targetDate}
@@ -130,39 +130,39 @@ const Home = () => {
         <></>
       ) : (
         <>
-          <div className="w-full flex justify-center p-3">
-            <div className="w-full max-w-screen-xl">
-              <div className="flex flex-col w-full rounded-lg p-2">
-                <div className="flex flex-col lg:flex-row backdrop-blur-lg shadow-2xl p-2 mt-2 rounded-lg justify-center">
-                  <div className="flex flex-col gap-2 items-center">
-                    <span className="text-2xl max-md:text-1xl font-bold text-center text-gray-100">
-                      DRUGI SEZON DARKALLEY
-                    </span>
-                    <span className="pr-2 text-gray-300">
-                      Lloyd Holloway, pochodzący z Cassandry miasta na północy
-                      jednej z wysp Oceanu Północnego - Alterii, przekazuje
-                      swoją historię dla młodych ludzi, którzy nie rozumieją,
-                      dlaczego życie jest takie mroczne. W roku 2022 wybuchła
-                      wojna, nuklearne bomby zniszczyły świat, a ludzie musieli
-                      szukać schronienia. Bunkry stały się ostatnią nadzieją na
-                      przetrwanie. W nowym świecie powstały różne społeczności,
-                      każda z innym podejściem do przetrwania. W 2039 roku Henry
-                      i jego grupa opuścili bunkier, odkrywając tajemnicze
-                      istoty. W 2058 roku plotki o bezpiecznej Osadzie Eden
-                      potwierdziły się. Lloyd, wiedząc, że kończy mu się czas,
-                      przekazuje informację o Edenie jako ostatni akt swojego
-                      życia.
-                      <p className="mt-2 text-sm text-gray-400 text-center">
-                        “Jeśli to czytasz, kieruj się tam – to bezpieczne
-                        miejsce, które pomoże Ci przetrwać w tym nowym, surowym
-                        świecie…”
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/*<div className="w-full flex justify-center p-3">*/}
+          {/*  <div className="w-full max-w-screen-xl">*/}
+          {/*    <div className="flex flex-col w-full rounded-lg p-2">*/}
+          {/*      <div className="flex flex-col lg:flex-row backdrop-blur-lg shadow-2xl p-2 mt-2 rounded-lg justify-center">*/}
+          {/*        <div className="flex flex-col gap-2 items-center">*/}
+          {/*          <span className="text-2xl max-md:text-1xl font-bold text-center text-gray-100">*/}
+          {/*            TRZECI SEZON DARKALLEY*/}
+          {/*          </span>*/}
+          {/*          <span className="pr-2 text-gray-300">*/}
+          {/*            Lloyd Holloway, pochodzący z Cassandry miasta na północy*/}
+          {/*            jednej z wysp Oceanu Północnego - Alterii, przekazuje*/}
+          {/*            swoją historię dla młodych ludzi, którzy nie rozumieją,*/}
+          {/*            dlaczego życie jest takie mroczne. W roku 2022 wybuchła*/}
+          {/*            wojna, nuklearne bomby zniszczyły świat, a ludzie musieli*/}
+          {/*            szukać schronienia. Bunkry stały się ostatnią nadzieją na*/}
+          {/*            przetrwanie. W nowym świecie powstały różne społeczności,*/}
+          {/*            każda z innym podejściem do przetrwania. W 2039 roku Henry*/}
+          {/*            i jego grupa opuścili bunkier, odkrywając tajemnicze*/}
+          {/*            istoty. W 2058 roku plotki o bezpiecznej Osadzie Eden*/}
+          {/*            potwierdziły się. Lloyd, wiedząc, że kończy mu się czas,*/}
+          {/*            przekazuje informację o Edenie jako ostatni akt swojego*/}
+          {/*            życia.*/}
+          {/*            <p className="mt-2 text-sm text-gray-400 text-center">*/}
+          {/*              “Jeśli to czytasz, kieruj się tam – to bezpieczne*/}
+          {/*              miejsce, które pomoże Ci przetrwać w tym nowym, surowym*/}
+          {/*              świecie…”*/}
+          {/*            </p>*/}
+          {/*          </span>*/}
+          {/*        </div>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
           <div className="w-full rounded-lg shadow-2xl">
             <div className="w-full flex justify-center p-3">
               <div className="w-full max-w-screen-xl">
@@ -173,7 +173,7 @@ const Home = () => {
                         className="rounded-lg"
                         width="100%"
                         height="100%"
-                        src="https://www.youtube.com/embed/Cuvnml6iOvc?si=IuoJR0_O58KLcRua"
+                        src="https://www.youtube.com/embed/Dku9wl6sp00?si=IuoJR0_O58KLcRua"
                         title="DarkAlley Sezon 2"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
