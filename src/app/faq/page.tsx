@@ -12,7 +12,7 @@ const faqs = [
     id: 2,
     question: "Czy potrzebuję zdać WL?",
     answer:
-      "Aktualnie nie jest u nas aktywna WL, każdy może wejść po wcześniejszym zapoznaniu się z lore oraz regulaminem",
+      "Tak wymagana jest u nas WL, trzeba wysłać podanie z potrzebnymi danymi oraz odbyć krótką rozmowę głosową",
   },
   {
     id: 3,
