@@ -74,7 +74,7 @@ export default function Donate() {
                 </p>
                 <div className="flex justify-center gap-4 mb-6">
                   <a
-                    href="https://www.paypal.com/paypalme/AdrixMED"
+                    href="https://paypal.me/DarkAlleyRP"
                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                     target="_blank"
                     rel="noopener noreferrer"

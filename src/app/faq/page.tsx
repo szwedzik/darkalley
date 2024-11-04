@@ -12,7 +12,7 @@ const faqs = [
     id: 2,
     question: "Czy potrzebuję zdać WL?",
     answer:
-      "Tak wymagana jest u nas WL, trzeba wysłać podanie z potrzebnymi danymi oraz odbyć krótką rozmowę głosową",
+      "Aktualnie jest u nas aktywna whitelista, po wysłaniu podania i rozmowie głosowej na discordzie zapraszamy do gry.",
   },
   {
     id: 3,
