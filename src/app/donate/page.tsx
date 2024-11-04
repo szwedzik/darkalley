@@ -82,7 +82,7 @@ export default function Donate() {
                     PayPal
                   </a>
                   <a
-                    href="https://tipply.pl/@DarkAlley"
+                    href="https://tipply.pl/@DarkAlleyRP"
                     className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -94,19 +94,6 @@ export default function Donate() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="w-full flex justify-center p-3 -z-0">
-        <iframe
-          id="myIframe"
-          src="https://widgets.tipply.pl/TIPS_GOAL/fc810a83-a4d3-47be-b199-03ae0c564e13/GOAL/b560f34d-aefb-4e2a-b975-748be79d2fed"
-          width="40%"
-          height="350px"
-          frameBorder="0"
-          allowFullScreen
-          title="Support Widget"
-          className="mx-auto"
-          style={{ top: "-175px" }}
-        />
       </div>
     </main>
   );

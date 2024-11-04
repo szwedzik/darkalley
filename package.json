@@ -10,13 +10,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@cloudflare/next-on-pages": "^1.12.0",
+    "@cloudflare/next-on-pages": "^1.13.5",
     "@headlessui/react": "^2.1.1",
     "@heroicons/react": "^2.1.4",
     "axios": "^1.7.2",
     "eslint": "^8.57.0",
     "next": "14.2.4",
-    "next-auth": "^5.0.0-beta.19",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.77.6"
