@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 import axios, { AxiosResponse } from "axios";
 
 interface AuthResponse {
