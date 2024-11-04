@@ -13,14 +13,14 @@ export async function GET(request: NextRequest) {
     console.log("fetching server info")
     if (!serverInfo) {
       return NextResponse.json(
-        { error: "Failed to fetch server info" },
+        { error: "Failed to fetch server info 1" },
         { status: 500 },
       );
     }
     return NextResponse.json(serverInfo);
   } catch (error: any) {
     return NextResponse.json(
-      { error: "Failed to fetch server info" },
+      { error: "Failed to fetch server info 2" },
       { status: 500 },
     );
   }
