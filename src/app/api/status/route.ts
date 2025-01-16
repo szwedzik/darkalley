@@ -6,7 +6,7 @@ import apiService from "@/lib/cfTools/apiServices";
 export const fetchCache = 'force-no-store';
 
 export async function GET(request: NextRequest) {
-  const serverId = "9932ff9a812ed8d0faa5cf25a019ed264590bb33";
+  const serverId = "2a5e43d5b99f4fac2dcb03b54fe2a98711658ad4";
 
   try {
     const serverInfo = await apiService.getServerInfo(serverId);
