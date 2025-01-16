@@ -34,7 +34,7 @@ const StatusServer: React.FC<Props> = ({ serverInfo }) => {
   const { players, slots, queue } = serverInfo.status;
 
   const joinServer = () => {
-    window.location.href = "steam://run/221100//+connect%2045.145.40.36:2302";
+    window.location.href = "steam://run/221100//+connect%205.252.100.129:2302";
   };
 
   return (
