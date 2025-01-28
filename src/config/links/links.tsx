@@ -10,7 +10,7 @@ const Links = {
     discord: "https://discord.gg/PUxkTED68A",
     tiktok: "https://www.tiktok.com/@darkalleyrp",
     instagram: "https://www.instagram.com/darkalleyrp",
-    youtube: "https://youtube.com/@DarkAleyRP",
+    youtube: "https://youtube.com/@DarkAlleyRP",
   },
 };
 
