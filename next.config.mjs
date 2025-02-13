@@ -18,7 +18,7 @@ const nextConfig = {
       {
         source: '/lore',
         destination: 'https://docs.google.com/document/d/134qcpYsMxOpf0fQruXTdWXgiD5yhPEV7Dei2Xr45FtI/edit?tab=t.0',
-        permanent: false,
+        permanent: true,
       },
     ];
   },
