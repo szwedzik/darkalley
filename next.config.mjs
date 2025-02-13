@@ -13,10 +13,21 @@ const nextConfig = {
     AUTH_DISCORD_SECRET: process.env.AUTH_DISCORD_SECRET,
     DATABASE_URL: process.env.DATABASE_URL,
   },
+  async redirects() {
+    return [
+      {
+        source: '/lore',
+        destination: 'https://docs.google.com/document/d/134qcpYsMxOpf0fQruXTdWXgiD5yhPEV7Dei2Xr45FtI/edit?tab=t.0',
+        permanent: false,
+      },
+    ];
+  },
 };
 
 if (process.env.NODE_ENV === 'development') {
-  await setupDevPlatform();
+  await (async () => {
+    await setupDevPlatform();
+  })();
 }
 
 export default nextConfig;
