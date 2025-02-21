@@ -33,7 +33,7 @@ const faqs = [
   {
     id: 6,
     question: "Jak użyć komend narracyjnych?",
-    answer: "Naciśnij klawisz ENTER i wpisz !me {czynność} lub !do {opis}",
+    answer: "Naciśnij klawisz ENTER i wpisz !me {czynność}, !do {opis} lub !try {czynność}",
   },
   {
     id: 7,
