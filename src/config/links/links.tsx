@@ -7,7 +7,7 @@ const Links = {
   donate: "/donate",
   dashboard: "/dashboard",
   socials: {
-    discord: "https://discord.gg/PUxkTED68A",
+    discord: "https://discord.gg/YB3nFkNzf5",
     tiktok: "https://www.tiktok.com/@darkalleyrp",
     instagram: "https://www.instagram.com/darkalleyrp",
     youtube: "https://youtube.com/@DarkAlleyRP",
