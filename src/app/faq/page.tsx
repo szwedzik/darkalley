@@ -6,7 +6,7 @@ const faqs = [
     id: 1,
     question: "Jak wejść na serwer?",
     answer:
-      "Wystarczy że wyszukasz nasz serwer w launcherze DayZ po danych: DarkAlley [RP][PL] IP: 45.145.40.36:2302",
+      "Wystarczy że wyszukasz nasz serwer w launcherze DayZ po danych: DarkAlley [RP][PL] IP: 193.25.252.45:2302",
   },
   {
     id: 2,
